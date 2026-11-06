@@ -29,6 +29,8 @@ class Gato extends Animal {
 }
 
 const cat = new Gato("Azazel", "calico", "miaw");
-console.log("Nombre= " + cat.getNombre);
+
+
+console.log("Nombre= " + cat.getNombre());
 console.log("Raza= " + cat.getRaza());
-console.log("Sonido= " + cat.hacerSonido);
+console.log("Sonido= " + cat.hacerSonido());
