@@ -13,22 +13,22 @@ class Animal {
     return this.#nombre;
   }
 
-  getRaza(raza) {
+  getRaza(raza) { 
     return this.#raza;
   }
 
-  hacerSonido(sonido) {
+  hacerSonido(sonido) { 
     return this.#sonido;
   }
 }
 
 class Gato extends Animal {
-  constructor(nombre, raza, sonido) {
+  constructor(raza, nombre, sonido) {
     super(raza, nombre, sonido);
   }
 }
 
-const cat = new Gato("Azazel", "calico", "miaw");
-console.log("Nombre= " + cat.getNombre);
+const cat = new Gato("calico", "Azazel", "miaw");
+console.log("Nombre= " + cat.getNombre()); // parentesis
 console.log("Raza= " + cat.getRaza());
-console.log("Sonido= " + cat.hacerSonido);
+console.log("Sonido= " + cat.hacerSonido()); // parentesis
